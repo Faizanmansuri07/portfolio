@@ -1,0 +1,388 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+
+    margin : 0;
+    padding : 0;
+    list-style: none;
+    box-sizing: border-box;
+  font-family: arial;
+    
+}
+body {
+    background-color: rgb(0 , 0 ,  33);
+}
+.container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+      height: 70px;
+      background-color : rgb(0 , 0, 45);
+      z-index: 1;
+    position: sticky;
+    top: 0;
+      
+}
+.container p{
+     margin-left: 30px;
+     font-size: 28px;
+     cursor: pointer;
+    
+}
+.nav-links li{
+   display: inline;
+  margin-right: 80px;
+
+  font-size: 19px;
+  cursor: pointer;
+
+}
+.nav-links{
+    display: inline-block;
+}
+.container i{
+     display: none;
+     font-size: 27px;
+     margin-right: 20px;
+}
+.nav-links li:hover {
+     text-decoration: underline;
+}
+@media (max-width:468px) {
+    .container i{
+        display: block;
+    }
+    .nav-name p {
+         font-size: 1.5rem;
+         margin-left: 8px;
+    }
+    .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    background-color : rgb(0 , 0, 45);
+}
+.nav-links.show {
+    display: flex;
+   
+}
+
+.nav-links li {
+    margin:10px 0;
+}
+ 
+}
+.hero-section {
+
+ width: 100%;
+ height: 800px;
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ margin-top: 20px;
+}
+.left-div {
+ width:40%;
+ position: relative;
+ top:5%;
+ 
+ height: 500px;
+ font-size: 2.5rem;
+ color : white;
+}
+.right-div {
+ width:40%;
+position: relative;
+top : -7%;
+ height: 600px
+}
+span {
+ color: rgb(170, 107, 228);
+}
+.right-div img {
+height: 110%;
+}
+hr {
+ color : rgb(0 , 0, 45);
+}
+/* skills */
+.skills {
+    margin-top :100px ;
+    width:100%;
+    padding: 0  40px;
+    height: 700px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.skill-details {
+    width:100%;
+    height: 90%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.box1 {
+    width : 360px;
+    height: 80%;
+    border-radius: 10px;
+    margin-top: 10px;
+    border :2px solid rgb(170, 107, 228);
+    background-color: white;
+}
+.skill-no-1{
+    padding: 20px 40px;
+}
+.skill-no-1 img {
+   width:100%;
+   border-radius: 10px;
+}
+.skill-no-1 p {
+   position: relative;
+   top : 70px;
+   left: 35%;
+   width :30%;
+   height: 30px;
+  color : rgb(93, 37, 145);
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+p:hover {
+  
+   text-decoration: underline;
+}
+.title {
+
+ margin-bottom: 10px;
+ font-size: 1.7rem;
+}
+
+a {
+text-decoration: none;
+color:white
+}
+.proj-title {
+     color :white;
+     font-size: 2rem;
+     text-align: center;
+    position: relative;
+    top: 80px
+}
+.projects {
+    margin-top :100px ;
+    width:100%;
+    padding: 0  40px;
+    height: 700px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.project-details {
+    width:100%;
+    height: 90%;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.box {
+     width : 360px;
+     height: 280px;
+     border-radius: 10px;
+     margin-top: 10px;
+     border :2px solid rgb(170, 107, 228);
+     background-color: white;
+}
+.proj-no-1{
+     padding: 20px 40px;
+}
+.proj-no-1 img {
+    width:100%;
+    border-radius: 10px;
+}
+.proj-no-1 button {
+    position: relative;
+    top : 70px;
+    width :30%;
+    height: 30px;
+     background-color: rgb(170, 107, 228);
+     outline : none;
+     border: none;
+     font-size: 1rem;
+     border-radius: 5px;
+}
+button:hover {
+    background-color:rgb(148, 56, 233) ;
+}
+.form-container {
+    color :white;
+   margin-top: 40px;
+}
+.cont-title {
+    color:white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 32px;
+}
+.form {
+    width :100%;
+    
+    padding: 0 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+.form-container {
+    width :100%;
+    margin: 10px 40px;
+    padding: 30px;
+    border-radius: 10px;
+}
+label {
+    display: block;
+    margin-top:15px;
+   margin-bottom:10px;
+    font-size: 16px;
+    color:white;
+    font-weight: 700;
+
+}
+input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    border :2px solid  rgb(170, 107, 228);
+    font-weight: 700;
+    border-radius: 5px;
+}
+textarea {
+    width : 100%;
+   padding : 10px 10px;
+    height: 200px;
+    border :2px solid  rgb(170, 107, 228);
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.submit button {
+    width: 70px;
+    height: 30px;
+    background-color: rgb(170, 107, 228);
+    outline : none;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.submit button:hover {
+    background-color:rgb(148, 56, 233) ;
+}
+@media screen and (max-width:468px) {
+   .hero-section {
+      height: 500px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+   }
+    .left-div {
+        width : 300px;
+       padding: 5px;
+    }
+    .right-div img {
+        width :355px;
+        height: 70%;
+   
+    }
+    .left-div {
+        font-size: 1.75rem;
+        height: 180px;
+    }
+    .right-div {
+        width : 400px;
+        margin-top: 10PX;
+        padding : 10px
+    }
+}
+@media screen and (max-width:468px) {
+    /* skill section */
+    .box1 {
+        width :500px;
+        height: 50%;
+       margin-bottom: 20px;
+        margin-top: 10px;
+    
+    }
+ 
+    .skill-no-1 img {
+        width : 70%
+    }
+}
+@media screen and (max-width:468px) {
+    /* project section */
+    .projects {
+        height: 300px;
+        padding : 0 10px;
+       background-color: white;
+       scroll-snap-type: x mandatory;
+       overflow-x: scroll;
+      scroll-padding: 30px;
+        position: relative;
+     top :350px;
+     display: flex;
+     scroll-snap-align: start;
+   
+    }
+    .project-details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    
+    }
+    form {
+        position: relative;
+        top: 400px;
+    }
+    .box {
+        width :320px;
+       margin-right: 20px;
+        scroll-snap-align: start;
+        background-color: transparent;
+    }
+    .cont-title {
+        position: relative;
+        top : 400px
+    }
+    .proj-title {
+        position: relative;
+        top : 420px;
+        margin: 10px 0;
+    }
+    .form {
+        width: 100%;
+
+    }
+    .form-container {
+        width :400px;
+    }
+     input {
+        width :100%
+     }
+    
+}

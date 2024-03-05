@@ -51,7 +51,7 @@ body {
 .nav-links li:hover {
      text-decoration: underline;
 }
-@media (max-width:468px) {
+@media (max-width:480px) {
     .container i{
         display: block;
     }
@@ -295,7 +295,7 @@ textarea {
 .submit button:hover {
     background-color:rgb(148, 56, 233) ;
 }
-@media screen and (max-width:468px) {
+@media screen and (max-width:480px) {
    .hero-section {
       height: 500px;
       flex-wrap: wrap;
@@ -320,7 +320,7 @@ textarea {
         padding : 10px
     }
 }
-@media screen and (max-width:468px) {
+@media screen and (max-width:480px) {
     /* skill section */
     .box1 {
         width :450px;
@@ -329,22 +329,26 @@ textarea {
         margin-top: 10px;
         background-color: transparent;
         border: 2px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
   .box1 img {
      background-color: white;
-     width : 160px
+     width : 160px;
+ 
   }
     .skill-no-1 img {
         width : 70%
     }
     .skill-no-1  p {
-        color : white
+       display: none;
     }
     .xc  {
       display: none
     }
 }
-@media screen and (max-width:468px) {
+@media screen and (max-width:480px) {
     /* project section */
     .projects {
         height: 300px;
@@ -395,9 +399,22 @@ textarea {
         padding: 30px;
         border-radius: 10px;
     }
-    }
+    
      input {
-        width :100%
+        width :100%;
      }
     
+}
+#title {
+    color : white;
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    top : 100px
+}
+@media screen and (max-width:340px) {
+      .box1 img {
+        width : 170px;
+        height: 70%;
+      }
 }
